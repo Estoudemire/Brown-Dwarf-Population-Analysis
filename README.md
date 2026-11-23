@@ -19,7 +19,7 @@ This code analyzes the relationship between age, color, and temperature for a po
 
 ## Results
 
-The results found that the temperature-color relationship varies between age groups when using the atmospheric model, as compared to using the evolutionary model. 
+The results show that the temperature-color relationship varies between age groups when using the atmospheric model, as compared to using the evolutionary model. 
 
 The Monte Carlo analysis produced the following average Z-scores:
 
