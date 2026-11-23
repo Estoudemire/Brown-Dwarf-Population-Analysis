@@ -1,23 +1,25 @@
 # Brown Dwarf Temperature-Color Relationship Analysis
 
 ## What does it do?
+This code analyzes the relationship between age, color, and temperature for a population of brown dwarfs using data from the UltraCoolSheet. The goal is to investigate how the temperature–color relationship varies across different age groups when using two different temperature-estimation methods, atmospheric and evolutionary models.
 
-This code analyzes the relationship between age, color, and temperature for a population of brown dwarfs using data from the UltraCoolSheet. The goal is to investigate how temperature-color relationship varies more across multiple age groups when using different temperature-estimation methods. More specifically, my hypothesis was 
-
+---
 
 ## How does it work?
 
-1. **Load and organize the data:** Two CSV datasets containing photometric, age, and temperature measurements are loaded into Pandas DataFrames.
-2. **Clean and combine datasets:** Rows with missing values are removed, and the datasets are matched using object names, resulting in a sample of 1,040 brown dwarfs.
-3. **Calculate color:** The K-band magnitude is subtracted from the J-band magnitude to obtain a color measurement (J-K).
-4. **Group by age:** Objects are divided into three age groups: young (0–2 Gyr), middle-aged (2–4 Gyr), and old (over 4 Gyr).
-5. **Fit polynomial curves:** Quintic polynomial functions are fitted to the temperature-color relationships for each age group using both atmospheric and evolutionary temperature measurements.
-6. **Run Monte Carlo simulations:** 1,000 random samples of 300 objects are selected from the middle-aged population. A polynomial fit is generated for each sample to create distributions of possible curve coefficients.
-7. **Compare results:** Z-scores are calculated to measure differences between the age-group curve coefficients and the Monte Carlo distributions.
+1. Two CSV datasets containing photometric, age, and temperature measurements are loaded into Pandas DataFrames.
+2. The data sets are cleaned. Rows with missing values are removed, and the datasets are matched using object names, resulting in a sample of 1,040 brown dwarfs.
+3. The K-band magnitude is subtracted from the J-band magnitude to obtain a color measurement (J-K).
+4. Objects are divided into three age groups: young (0–2 Gyr), middle-aged (2–4 Gyr), and old (over 4 Gyr).
+5. Quintic polynomial functions are fitted to the temperature-color relationships for each age group using both atmospheric and evolutionary temperature measurements.
+6. 1,000 random samples of 300 objects are selected from the middle-aged population. A polynomial fit is generated for each sample to create distributions of possible curve coefficients.
+7. Z-scores are calculated to measure differences between the age-group curve coefficients and the Monte Carlo distributions.
+
+---
 
 ## Results
 
-The analysis found that the temperature-color relationship varies between age groups, with differences depending on the temperature measurement model.
+The results found that the temperature-color relationship varies between age groups when using the atmospheric model, as compared to using the evolutionary model. 
 
 The Monte Carlo analysis produced the following average Z-scores:
 
@@ -26,7 +28,7 @@ The Monte Carlo analysis produced the following average Z-scores:
 | Evolutionary | 1.54 |
 | Atmospheric | 2.38 |
 
-The atmospheric model showed greater variation in the temperature-color relationship between age groups than the evolutionary model.
+These scores represent 
 
 ## How to use
 
