@@ -28,18 +28,13 @@ The Monte Carlo analysis produced the following average Z-scores:
 | Evolutionary | 1.54 |
 | Atmospheric | 2.38 |
 
-These scores represent 
+These scores measure how much the temperature–color relationship varies between age groups. The higher score for the atmospheric model indicates greater variation than the evolutionary model.
 
-## How to use
-
-1. Clone or download this repository.
-2. Open `BrownDwarf_Temp_Color.ipynb` in Jupyter Notebook, JupyterLab, or Google Colab.
-3. Make sure both CSV datasets are available in the notebook's working directory.
-4. Run the notebook cells in order.
+---
 
 ## Files
 
-- `BrownDwarf_Temp_Color.ipynb` — Main analysis notebook.
-- `UltracoolSheetMain.csv` — Source data containing age and photometric measurements.
-- `UltracoolSheet_FundamentalProperties.csv` — Source data containing atmospheric and evolutionary temperature measurements.
+- `BrownDwarf_Temp_Color.ipynb` — Main notebook.
+- `UltracoolSheetMain.csv` — Data containing age and photometric measurements.
+- `UltracoolSheet_FundamentalProperties.csv` — Data containing atmospheric and evolutionary temperature measurements.
 - `EmmaStoudemire_Project3Paper.pdf` — Written project paper.
